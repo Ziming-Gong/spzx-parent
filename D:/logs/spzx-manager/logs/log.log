@@ -844,3 +844,204 @@ java.lang.RuntimeException: wrong password
 	at java.base/java.lang.Thread.run(Thread.java:833)
 2023-10-15 02:27:33 HikariPool-1 - Shutdown initiated...
 2023-10-15 02:27:33 HikariPool-1 - Shutdown completed.
+2023-10-15 04:25:09 Starting ManagerApplication using Java 17.0.8.1 with PID 96885 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 04:25:09 The following 1 profile is active: "dev"
+2023-10-15 04:25:10 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 04:25:10 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 04:25:10 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 04:25:10 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 04:25:10 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 04:25:10 Starting service [Tomcat]
+2023-10-15 04:25:10 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 04:25:10 Initializing Spring embedded WebApplicationContext
+2023-10-15 04:25:10 Root WebApplicationContext: initialization completed in 802 ms
+2023-10-15 04:25:11 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 04:25:11 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 04:25:11 Started ManagerApplication in 2.05 seconds (process running for 2.404)
+2023-10-15 04:25:17 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 04:25:17 Initializing Servlet 'dispatcherServlet'
+2023-10-15 04:25:17 Completed initialization in 1 ms
+2023-10-15 04:25:18 Init duration for springdoc-openapi is: 96 ms
+2023-10-15 04:25:23 HikariPool-1 - Starting...
+2023-10-15 04:25:24 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46fc1b61
+2023-10-15 04:25:24 HikariPool-1 - Start completed.
+2023-10-15 05:56:39 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m14s995ms).
+2023-10-15 07:36:35 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m55s767ms).
+2023-10-15 09:00:16 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m41s113ms).
+2023-10-15 09:55:18 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m1s622ms).
+2023-10-15 11:19:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m7s359ms).
+2023-10-15 11:52:26 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m186ms).
+2023-10-15 13:00:34 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m8s756ms).
+2023-10-15 13:41:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m32s120ms).
+2023-10-15 13:52:35 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m28s540ms).
+2023-10-15 14:27:38 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m2s952ms).
+2023-10-15 16:44:19 HikariPool-1 - Shutdown initiated...
+2023-10-15 16:44:19 HikariPool-1 - Shutdown completed.
+2023-10-15 16:49:57 Starting ManagerApplication using Java 17.0.8.1 with PID 23453 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 16:49:57 The following 1 profile is active: "dev"
+2023-10-15 16:49:58 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 16:49:58 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 16:49:58 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 16:49:58 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 16:49:58 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 16:49:58 Starting service [Tomcat]
+2023-10-15 16:49:58 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 16:49:58 Initializing Spring embedded WebApplicationContext
+2023-10-15 16:49:58 Root WebApplicationContext: initialization completed in 794 ms
+2023-10-15 16:49:59 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 16:49:59 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 16:49:59 Started ManagerApplication in 1.991 seconds (process running for 2.433)
+2023-10-15 16:50:05 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 16:50:05 Initializing Servlet 'dispatcherServlet'
+2023-10-15 16:50:05 Completed initialization in 1 ms
+2023-10-15 16:59:45 Starting ManagerApplication using Java 17.0.8.1 with PID 24957 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 16:59:45 The following 1 profile is active: "dev"
+2023-10-15 16:59:45 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 16:59:45 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 16:59:45 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 16:59:46 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 16:59:46 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 16:59:46 Starting service [Tomcat]
+2023-10-15 16:59:46 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 16:59:46 Initializing Spring embedded WebApplicationContext
+2023-10-15 16:59:46 Root WebApplicationContext: initialization completed in 790 ms
+2023-10-15 16:59:46 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 16:59:46 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 16:59:46 Started ManagerApplication in 1.976 seconds (process running for 2.372)
+2023-10-15 17:00:04 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 17:00:04 Initializing Servlet 'dispatcherServlet'
+2023-10-15 17:00:04 Completed initialization in 9 ms
+2023-10-15 17:10:12 Starting ManagerApplication using Java 17.0.8.1 with PID 26371 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 17:10:12 The following 1 profile is active: "dev"
+2023-10-15 17:10:12 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 17:10:12 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 17:10:12 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 17:10:12 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 17:10:12 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 17:10:12 Starting service [Tomcat]
+2023-10-15 17:10:12 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 17:10:12 Initializing Spring embedded WebApplicationContext
+2023-10-15 17:10:12 Root WebApplicationContext: initialization completed in 777 ms
+2023-10-15 17:10:13 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 17:10:13 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 17:10:13 Started ManagerApplication in 1.894 seconds (process running for 2.258)
+2023-10-15 17:10:21 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 17:10:21 Initializing Servlet 'dispatcherServlet'
+2023-10-15 17:10:21 Completed initialization in 0 ms
+2023-10-15 17:12:10 Starting ManagerApplication using Java 17.0.8.1 with PID 26616 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 17:12:10 The following 1 profile is active: "dev"
+2023-10-15 17:12:10 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 17:12:10 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 17:12:10 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 17:12:10 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 17:12:10 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 17:12:10 Starting service [Tomcat]
+2023-10-15 17:12:10 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 17:12:10 Initializing Spring embedded WebApplicationContext
+2023-10-15 17:12:10 Root WebApplicationContext: initialization completed in 759 ms
+2023-10-15 17:12:11 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 17:12:11 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 17:12:11 Started ManagerApplication in 1.978 seconds (process running for 2.335)
+2023-10-15 17:12:23 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 17:12:23 Initializing Servlet 'dispatcherServlet'
+2023-10-15 17:12:23 Completed initialization in 1 ms
+2023-10-15 17:12:23 HikariPool-1 - Starting...
+2023-10-15 17:12:23 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b95fc2b
+2023-10-15 17:12:23 HikariPool-1 - Start completed.
+2023-10-15 18:12:07 HikariPool-1 - Shutdown initiated...
+2023-10-15 18:12:07 HikariPool-1 - Shutdown completed.
+2023-10-15 18:12:12 Starting ManagerApplication using Java 17.0.8.1 with PID 34498 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 18:12:12 The following 1 profile is active: "dev"
+2023-10-15 18:12:12 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 18:12:12 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 18:12:12 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 18:12:13 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 18:12:13 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 18:12:13 Starting service [Tomcat]
+2023-10-15 18:12:13 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 18:12:13 Initializing Spring embedded WebApplicationContext
+2023-10-15 18:12:13 Root WebApplicationContext: initialization completed in 859 ms
+2023-10-15 18:12:14 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 18:12:14 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 18:12:14 Started ManagerApplication in 2.1 seconds (process running for 2.502)
+2023-10-15 18:12:28 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 18:12:28 Initializing Servlet 'dispatcherServlet'
+2023-10-15 18:12:28 Completed initialization in 2 ms
+2023-10-15 18:13:32 HikariPool-1 - Starting...
+2023-10-15 18:13:33 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1852215f
+2023-10-15 18:13:33 HikariPool-1 - Start completed.
+2023-10-15 18:23:20 HikariPool-1 - Shutdown initiated...
+2023-10-15 18:23:20 HikariPool-1 - Shutdown completed.
+2023-10-15 18:23:27 Starting ManagerApplication using Java 17.0.8.1 with PID 36008 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 18:23:27 The following 1 profile is active: "dev"
+2023-10-15 18:23:27 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 18:23:27 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 18:23:27 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 18:23:27 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 18:23:27 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 18:23:27 Starting service [Tomcat]
+2023-10-15 18:23:27 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 18:23:27 Initializing Spring embedded WebApplicationContext
+2023-10-15 18:23:27 Root WebApplicationContext: initialization completed in 794 ms
+2023-10-15 18:23:28 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 18:23:28 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 18:23:28 Started ManagerApplication in 2.042 seconds (process running for 2.639)
+2023-10-15 18:23:35 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 18:23:35 Initializing Servlet 'dispatcherServlet'
+2023-10-15 18:23:35 Completed initialization in 3 ms
+2023-10-15 18:24:01 HikariPool-1 - Starting...
+2023-10-15 18:24:02 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ab00e8e
+2023-10-15 18:24:02 HikariPool-1 - Start completed.
+2023-10-15 19:01:42 HikariPool-1 - Shutdown initiated...
+2023-10-15 19:01:42 HikariPool-1 - Shutdown completed.
+2023-10-15 19:01:49 Starting ManagerApplication using Java 17.0.8.1 with PID 40908 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 19:01:49 The following 1 profile is active: "dev"
+2023-10-15 19:01:49 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 19:01:49 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 19:01:49 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 19:01:49 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 19:01:49 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 19:01:49 Starting service [Tomcat]
+2023-10-15 19:01:49 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 19:01:49 Initializing Spring embedded WebApplicationContext
+2023-10-15 19:01:49 Root WebApplicationContext: initialization completed in 798 ms
+2023-10-15 19:01:50 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 19:01:50 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 19:01:50 Started ManagerApplication in 2.085 seconds (process running for 2.426)
+2023-10-15 19:03:17 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 19:03:17 Initializing Servlet 'dispatcherServlet'
+2023-10-15 19:03:17 Completed initialization in 7 ms
+2023-10-15 19:11:39 HikariPool-1 - Starting...
+2023-10-15 19:11:39 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@528a5171
+2023-10-15 19:11:39 HikariPool-1 - Start completed.
+2023-10-15 19:18:35 HikariPool-1 - Shutdown initiated...
+2023-10-15 19:18:35 HikariPool-1 - Shutdown completed.
+2023-10-15 19:18:49 Starting ManagerApplication using Java 17.0.8.1 with PID 43214 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-15 19:18:49 The following 1 profile is active: "dev"
+2023-10-15 19:18:49 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-15 19:18:49 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-15 19:18:49 Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-15 19:18:50 Tomcat initialized with port(s): 8501 (http)
+2023-10-15 19:18:50 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-15 19:18:50 Starting service [Tomcat]
+2023-10-15 19:18:50 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-15 19:18:50 Initializing Spring embedded WebApplicationContext
+2023-10-15 19:18:50 Root WebApplicationContext: initialization completed in 798 ms
+2023-10-15 19:18:51 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-15 19:18:51 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-15 19:18:51 Started ManagerApplication in 1.991 seconds (process running for 2.413)
+2023-10-15 19:20:18 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-15 19:20:18 Initializing Servlet 'dispatcherServlet'
+2023-10-15 19:20:18 Completed initialization in 9 ms
+2023-10-15 19:25:25 HikariPool-1 - Starting...
+2023-10-15 19:25:25 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b3b5992
+2023-10-15 19:25:25 HikariPool-1 - Start completed.
+2023-10-15 20:21:56 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m30s362ms).
+2023-10-15 20:23:59 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s987ms).
+2023-10-15 20:37:28 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m59s90ms).
+2023-10-15 20:59:14 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m15s408ms).
+2023-10-15 21:19:42 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s120ms).
+2023-10-15 21:36:51 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m8s844ms).
+2023-10-15 21:53:08 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s345ms).
+2023-10-15 22:09:27 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s309ms).
+2023-10-15 22:14:32 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s936ms).

@@ -1,11 +1,14 @@
 package com.robb.spzx.manager.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
 import com.alibaba.fastjson.JSON;
+import com.robb.spzx.common.exception.CustomException;
 import com.robb.spzx.manager.mapper.SysUserMapper;
 import com.robb.spzx.manager.service.SysUserService;
 import com.robb.spzx.model.dto.system.LoginDto;
 import com.robb.spzx.model.entity.system.SysUser;
+import com.robb.spzx.model.vo.common.ResultCodeEnum;
 import com.robb.spzx.model.vo.system.LoginVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -27,8 +30,25 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public LoginVo login(LoginDto loginDto) {
 
-        //1. 获取提交过来的用户名LoginDto
 
+        //验证码验证
+        //1. 获取输入验证码和存储到redis的key名称 loginDto获取到
+        String captcha = loginDto.getCaptcha();
+        String key = loginDto.getCodeKey();
+
+        //2. 根据获取到的redis里面的key，查询redis里面存储的验证码 !!!key的前缀一定要一样
+        String redisCode = redisTemplate.opsForValue().get("user:validate" + key);
+
+        //3. 比较输入的验证码和redis中的验证码是否一致
+        if (StrUtil.isEmpty(redisCode) || !StrUtil.equalsAnyIgnoreCase(redisCode, captcha)) {
+            throw new CustomException(ResultCodeEnum.VALIDATECODE_ERROR);
+        }
+
+        //4. 如果不一致测失败
+        //5. 如果一致，删除redis里面的验证码
+        redisTemplate.delete("user:validate" + key);
+
+        //1. 获取提交过来的用户名LoginDto
         String userName = loginDto.getUserName();
 
         //2. 根据这个用户名查询表 sys_user
@@ -36,7 +56,8 @@ public class SysUserServiceImpl implements SysUserService {
 
         //3. 如果查不到， 登陆失败
         if (sysUser == null) {
-            throw new RuntimeException("Not found User Info");
+//            throw new RuntimeException("Not found User Info");
+            throw new CustomException(ResultCodeEnum.LOGIN_ERROR);
         }
 
         //4. 如果根据这个用户名 查询到用户信息， 用户存在
@@ -46,7 +67,8 @@ public class SysUserServiceImpl implements SysUserService {
         // 把输入的密码进行加密，在进行比较 MD5加密
         input_password = DigestUtils.md5DigestAsHex(input_password.getBytes());
         if (!input_password.equals(database_password)) {
-            throw new RuntimeException("wrong password");
+//            throw new RuntimeException("wrong password");
+            throw new CustomException(ResultCodeEnum.LOGIN_ERROR);
         }
 
         //6. 如果密码一致，登陆成功
@@ -65,5 +87,17 @@ public class SysUserServiceImpl implements SysUserService {
 
 
         return loginVo;
+    }
+
+    @Override
+    public SysUser getUserInfo(String token) {
+        String userJson = redisTemplate.opsForValue().get("user:login" + token);
+        SysUser sysUser = JSON.parseObject(userJson, SysUser.class);
+        return sysUser;
+    }
+
+    @Override
+    public void logout(String token) {
+        redisTemplate.delete("user:login" + token);
     }
 }
