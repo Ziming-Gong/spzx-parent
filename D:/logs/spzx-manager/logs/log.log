@@ -1045,3 +1045,25 @@ java.lang.RuntimeException: wrong password
 2023-10-15 21:53:08 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s345ms).
 2023-10-15 22:09:27 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s309ms).
 2023-10-15 22:14:32 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s936ms).
+2023-10-16 01:58:37 HikariPool-1 - Shutdown initiated...
+2023-10-16 01:58:37 HikariPool-1 - Shutdown completed.
+2023-10-16 01:58:43 Starting ManagerApplication using Java 17.0.8.1 with PID 81166 (/Users/ming/Desktop/Projects/spzx-parent/spzx-manager/target/classes started by ming in /Users/ming/Desktop/Projects/spzx-parent)
+2023-10-16 01:58:43 The following 1 profile is active: "dev"
+2023-10-16 01:58:44 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-16 01:58:44 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-16 01:58:44 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-10-16 01:58:44 Tomcat initialized with port(s): 8501 (http)
+2023-10-16 01:58:44 Initializing ProtocolHandler ["http-nio-8501"]
+2023-10-16 01:58:44 Starting service [Tomcat]
+2023-10-16 01:58:44 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-10-16 01:58:44 Initializing Spring embedded WebApplicationContext
+2023-10-16 01:58:44 Root WebApplicationContext: initialization completed in 987 ms
+2023-10-16 01:58:45 Starting ProtocolHandler ["http-nio-8501"]
+2023-10-16 01:58:45 Tomcat started on port(s): 8501 (http) with context path ''
+2023-10-16 01:58:45 Started ManagerApplication in 2.338 seconds (process running for 2.67)
+2023-10-16 01:58:50 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 01:58:50 Initializing Servlet 'dispatcherServlet'
+2023-10-16 01:58:50 Completed initialization in 1 ms
+2023-10-16 01:59:00 HikariPool-1 - Starting...
+2023-10-16 01:59:00 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ece7fcc
+2023-10-16 01:59:00 HikariPool-1 - Start completed.

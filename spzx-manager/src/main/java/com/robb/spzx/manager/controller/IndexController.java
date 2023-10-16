@@ -8,6 +8,7 @@ import com.robb.spzx.model.vo.common.Result;
 import com.robb.spzx.model.vo.common.ResultCodeEnum;
 import com.robb.spzx.model.vo.system.LoginVo;
 import com.robb.spzx.model.vo.system.ValidateCodeVo;
+import com.robb.spzx.utils.AuthContextUtil;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,23 +49,28 @@ public class IndexController {
 
     /**
      * 获取当前登陆的用户信息
-     *
+     * 优化：从ThreadLocal里面直接获得信息
      * @return
      */
     @GetMapping(value = "/getUserInfo")
     public Result getUserInfo(@RequestHeader(name = "token") String token) {
-        //1. 从请求头获取token
-        //方法一： HttpServletRequest request
-//        String token = request.getHeader(("token"));
-        // 方法2
-        // @RequestHeader(name = "token") String token
+        // 优化 前 v0.0.1
+//        //1. 从请求头获取token
+//        //方法一： HttpServletRequest request
+//        // String token = request.getHeader(("token"));
+//        // 方法2
+//        // @RequestHeader(name = "token") String token
+//
+//        //2. 根据token查询redis获取用户信息
+//        SysUser sysUser = sysUserService.getUserInfo(token);
+//        return Result.build(sysUser, ResultCodeEnum.SUCCESS);
 
-        //2. 根据token查询redis获取用户信息
-        SysUser sysUser = sysUserService.getUserInfo(token);
+
+        //优化后 v0.0.2
 
         //返回用户信息
 
-        return Result.build(sysUser, ResultCodeEnum.SUCCESS);
+        return Result.build(AuthContextUtil.get(), ResultCodeEnum.SUCCESS);
     }
 
     @GetMapping(value = "/logout")
