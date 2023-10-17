@@ -18,9 +18,34 @@
             <if test="roleName != null and roleName !=''">
                 and role_name LIKE concat('%',#{roleName},'%')
             </if>
+            and is_deleted = 0
         </where>
         order by id DESC
     </select>
+
+    <insert id="save">
+        INSERT INTO sys_role (id, role_name, role_code,description) values (#{id}, #{roleName}, #{roleCode}, #{description})
+    </insert>
+
+    <update id="update">
+        update sys_role set
+        <if test="roleName != null and roleName != ''">
+            role_name = #{roleName},
+        </if>
+        <if test="roleCode != null and roleCode != ''">
+            role_code = #{roleCode},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+    <update id="delete">
+        update sys_role set is_deleted=1 where id = #{roleId}
+    </update>
 
 
 </mapper>
