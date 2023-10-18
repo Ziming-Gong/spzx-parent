@@ -3,10 +3,13 @@ package com.robb.spzx.manager.service.impl;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
 import com.alibaba.fastjson.JSON;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.robb.spzx.common.exception.CustomException;
 import com.robb.spzx.manager.mapper.SysUserMapper;
 import com.robb.spzx.manager.service.SysUserService;
 import com.robb.spzx.model.dto.system.LoginDto;
+import com.robb.spzx.model.dto.system.SysUserDto;
 import com.robb.spzx.model.entity.system.SysUser;
 import com.robb.spzx.model.vo.common.ResultCodeEnum;
 import com.robb.spzx.model.vo.system.LoginVo;
@@ -15,6 +18,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -99,5 +103,43 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public void logout(String token) {
         redisTemplate.delete("user:login" + token);
+    }
+
+    @Override
+    public PageInfo<SysUser> findByPage(Integer pageNum, Integer pageSize, SysUserDto sysUserDto) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<SysUser> list = sysUserMapper.findByPage(sysUserDto);
+        PageInfo<SysUser> pageInfo = new PageInfo<>(list);
+        return pageInfo;
+    }
+
+    @Override
+    public void saveSysUser(SysUser sysUser) {
+        //判断用户名字不能重复
+        String userName = sysUser.getUserName();
+        SysUser dbSysUser = sysUserMapper.selectUserInfoByUserName(userName);
+        if (dbSysUser != null) {
+            throw new CustomException(ResultCodeEnum.USER_NAME_IS_EXISTS);
+        }
+        //密码加密
+        String password = sysUser.getPassword();
+        String md5Password = DigestUtils.md5DigestAsHex(password.getBytes());
+        sysUser.setPassword(md5Password);
+
+        sysUser.setStatus(1);
+
+
+        sysUserMapper.save(sysUser);
+    }
+
+    @Override
+    public void updateSysUser(SysUser sysUser) {
+        sysUserMapper.update(sysUser);
+
+    }
+
+    @Override
+    public void deleteById(Long userid) {
+        sysUserMapper.delete(userid);
     }
 }
